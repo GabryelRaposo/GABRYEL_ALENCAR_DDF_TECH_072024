@@ -6,7 +6,7 @@ O Dataset utilizado foi o de ecommerce da Olist, disponível no [Kaggle](https:/
 
 ### Configuração do Dataset
 
-![Diagrama de Dados](https://postimg.cc/sB1VdsdR)
+![Diagrama de Dados](answers of the test/images/kaggle.png)
 
 Foram utilizados os seguintes datasets:
 
@@ -22,7 +22,7 @@ Os datasets foram agrupados e foi criado um novo dataset consolidado contendo in
 
 Após o processamento, na camada `processed`, obtivemos o seguinte dataset:
 
-![Dataset Pedidos](link_para_o_print_dataset_pedidos)
+![Dataset Pedidos](answers of the test/images/dataset.png)
 
 ### Link para o Dataset
 
