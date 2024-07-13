@@ -92,24 +92,58 @@ O dashboard de análise descritiva segue abaixo e nos permite identificar os seg
 - **Comparação Anual:** Crescimento de 2016 para 2017, leve queda em 2018
 - **Descrição:** O gráfico compara a receita anual ao longo dos anos, mostrando um aumento significativo de 2016 para 2017 e uma leve queda em 2018. 
 
-### Visualização do Dashboard
+### Link para o Dashboard
 
 O dashboard pode ser analisado no seguinte link:
 
 ![Dashboard descritivo](https://metabase-treinamentos.dadosfera.ai/dashboard/133-analise-descritiva)
 
-### Link para o Dashboard
+## Pergunta 3: Sobre a Dadosfera - Explorar - Governança de dados
 
-[Dashboard Vendas Mensais na Dadosfera](https://dadosfera.exemplo.com/dashboards/vendas-mensais)
+Os dados foram catalogados na dadosfera e divididos em 3 principais áreas.
 
-## Pergunta 3: Descreva o Data App "Análise de Clientes"
+Raw data: os csvs importados foram colocados primeiramente nessa camada. (TB__UHWGOI__OLIST_ORDER_PAYMENTS_DATASET, )
+processed: o processamento desses dados realizando os agrupamentos necessários. (Interno no código)
+Curated: Os dados que foram utilizados para realizar a montagem do dashboard no dadosfera. (TB__PKY4K8__OLIST_ECOMMERCE)
 
-O data app "Análise de Clientes" permite uma análise detalhada do comportamento dos clientes, segmentação e métricas de retenção.
+## Pergunta 4: Sobre Data quality
 
-### Visualização do Data App
+# Melhorando a Qualidade dos Dados no Ecommerce
 
-![Data App Análise de Clientes](link_para_o_print_data_app_analise_clientes)
+## Abordagem para Identificação e Correção de Inconsistências
 
-### Link para o Data App
+Após a integração e exploração dos dados do site de e-commerce, identificamos várias inconsistências e dados faltantes que podem impactar negativamente a performance dos modelos de IA e a experiência de compra dos clientes. Utilizando ferramentas e práticas recomendadas pela Dadosfera, abordamos a melhoria da qualidade desses dados de forma sistemática.
 
-[Data App Análise de Clientes na Dadosfera](https://dadosfera.exemplo.com/data-apps/analise-clientes)
+### Utilização do Dataset Processado
+
+Para verificar a qualidade dos dados, utilizamos o dataset já processado (`df_processed_orders2.csv`). Este dataset foi analisado para identificar problemas de qualidade, tais como valores ausentes, duplicatas e inconsistências de formato. A análise foi realizada utilizando a biblioteca `ydata_profiling`, que facilita a geração de relatórios detalhados de perfil dos dados.
+
+### Passos Realizados
+
+1. **Carregamento dos Dados:** 
+    - Os dados foram carregados a partir do arquivo CSV `df_processed_orders2.csv`, que contém os dados processados e integrados do ecommerce.
+
+2. **Geração do Relatório de Perfil dos Dados:**
+    - Utilizando `ProfileReport` da biblioteca `ydata_profiling`, geramos um relatório explorativo e detalhado sobre a qualidade dos dados. Este relatório inclui estatísticas descritivas, identificação de valores ausentes, distribuições de dados, correlações, entre outros.
+
+3. **Salvamento e Exibição do Relatório:**
+    - O relatório foi salvo como um arquivo HTML (`data_quality_report.html`) para fácil visualização e compartilhamento.
+
+
+### Caminho do Notebook no GitHub
+
+O código e a análise detalhada podem ser encontrados no notebook disponível no seguinte caminho no GitHub:
+
+`/GABRYEL_ALENCAR_DDF_TECH_072024/notebooks/notebook.ipynb`
+
+## Item 5 - Sobre o uso de GenAI e LLMs - Processar
+
+Para aquisição dos dados 
+O dataset de análise descritiva segue abaixo e nos permite identificar os seguintes principais pontos:
+
+![Dataset Pedidos](images/LLM_dataset.png)
+
+
+Algumas das features da plataforma da dadosfera continuaram indisponíveis para mim, como o módulo de inteligência e de transformação, por isso, os modelos em python precisaram ser rodados localmente e processamento de alguns csvs também.
+
+
