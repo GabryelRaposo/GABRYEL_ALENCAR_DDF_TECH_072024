@@ -1,4 +1,11 @@
 # Respostas do Teste
+## Item 0:
+O gannt com cronograma do projeto pode ser identificado no seguinte link:
+
+https://docs.google.com/spreadsheets/d/1Rx6qWU4pqk1qQpLPe-0xAQIUPwiaUDObtr5HtLh8w1c/edit?usp=sharing
+
+
+![Dataset Pedidos](images/gannt.png)
 
 ## Item 1: Sobre a Base de Dados
 
@@ -96,7 +103,7 @@ O dashboard de análise descritiva segue abaixo e nos permite identificar os seg
 
 O dashboard pode ser analisado no seguinte link:
 
-![Dashboard descritivo](https://metabase-treinamentos.dadosfera.ai/dashboard/133-analise-descritiva)
+[Dashboard]https://metabase-treinamentos.dadosfera.ai/dashboard/133-analise-descritiva
 
 ## Pergunta 3: Sobre a Dadosfera - Explorar - Governança de dados
 
@@ -138,11 +145,21 @@ O código e a análise detalhada podem ser encontrados no notebook disponível n
 
 ## Item 5 - Sobre o uso de GenAI e LLMs - Processar
 
-Para aquisição dos dados 
-O dataset de análise descritiva segue abaixo e nos permite identificar os seguintes principais pontos:
+Os dados foram adquiridos na URL: https://huggingface.co/datasets/spacemanidol/product-search-corpus/resolve/main/corpus-simple.jsonl
+
+Nesse item a capacidade de processamento de 100 mil linhas foi um ponto crítico no desenvolvimento da etapa. Uma opção mais ideal nessa situação seria a utilização da API da open-AI com o chatgpt-4o, porém, por custo optou-se por usar o chatgpt-3.5 para rodar 1000 linhas. O teste para rodar 100 mil linhas foi iniciado com uma LLM open-source via GROC API, a LLM utilizada era a llama3-8b-8192, porém, o tempo de processamento não daria e foi interrompido. 
+
+O dataset de análise gerado pelo chatgpt-3.5 segue abaixo.
 
 ![Dataset Pedidos](images/LLM_dataset.png)
 
+Após a geração do dataset, um dashboard utilizando as 5 features adquiridas de cada produto foi criado, como se pode ver na figura:
+
+![Dashboard LLM](images/features.png)
+
+As features para compor as 5 diferentes visualizações foram: Cor, material, categoria, público alvo e marca.
+
+O dashboard pode ser visualizado no link: https://metabase-treinamentos.dadosfera.ai/dashboard/134-llm
 
 Algumas das features da plataforma da dadosfera continuaram indisponíveis para mim, como o módulo de inteligência e de transformação, por isso, os modelos em python precisaram ser rodados localmente e processamento de alguns csvs também.
 
