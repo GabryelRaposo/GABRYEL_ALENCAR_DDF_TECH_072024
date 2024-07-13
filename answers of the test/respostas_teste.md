@@ -109,7 +109,7 @@ O dashboard pode ser analisado no seguinte link:
 
 Os dados foram catalogados na dadosfera e divididos em 3 principais áreas.
 
-Raw data: os csvs importados foram colocados primeiramente nessa camada. (TB__UHWGOI__OLIST_ORDER_PAYMENTS_DATASET, )
+Raw data: os csvs importados foram colocados primeiramente nessa camada. 
 processed: o processamento desses dados realizando os agrupamentos necessários. (Interno no código)
 Curated: Os dados que foram utilizados para realizar a montagem do dashboard no dadosfera. (TB__PKY4K8__OLIST_ECOMMERCE)
 
